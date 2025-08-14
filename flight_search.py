@@ -36,8 +36,3 @@ response = requests.get(flight_search_url, headers=headers, params=params)
 data = response.json()
 for i in range(len(data)+1):
     print(data["data"][i]["price"]["total"])
-
-
-
-
-
